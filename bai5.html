@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let a = [];
+    let b = [];
+    let n = prompt("nhập số ký tự trong chuỗi a: ");
+    for(let i =0; i<n;i++){
+        a[i]=prompt("phần tử số "+i);
+    }
+    let m = prompt("nhập số ký tự trong chuỗi b: ");
+    for(let j =0; j<m;j++){
+        b[j]=prompt("phần tử số : "+j);
+    }
+    document.write(a);
+    document.write("<br>");
+    document.write(b);
+    document.write("<br>");
+    let kt= false;
+    if(a.length===b.length){
+        for(let i =0;i<a.length;i++){
+            if(a[i]===b[i]) kt=true;
+            else
+                kt=false;
+        }
+    }
+    else kt=false
+    if(kt)
+        document.write("giống nhau");
+    else
+        document.write("khác nhau");
+</script>
+</body>
+</html>
